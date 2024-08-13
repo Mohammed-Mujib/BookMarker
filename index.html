@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BookMarker</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="py-5">
+            <h3>BookMarker</h3>
+        </div>
+        <hr>
+        <div class="row ">
+            <div class="col-sm-12 bg-dark text-white py-5">
+                <div class="text-center">
+                    <h2>BookMark your favorit sites</h2>
+                    <label for="siteName" class="bold">Site Name</label>
+                    <input type="text" placeholder="Website name" class=" my-2 w-75 mx-auto form-control" id="siteName">
+                    <label for="siteUrl" class="bold">Site Url</label>
+                    <input type="text" placeholder="Website URL" class=" my-2 w-75 mx-auto form-control" id="siteUrl">
+                    <button class="btn btn-primary my-2" onclick="add()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <table class="table table-dark table-striped">
+            <thead class="bg-black" >
+                <tr>
+                    <th class="">Websites</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tableData" class="table-striped">
+
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/my.js"></script>
+    
+</body>
+</html>
